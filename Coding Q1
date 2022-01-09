@@ -3,31 +3,27 @@ import java.util.Scanner;
 public class Ques1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub		
+		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-				
+		double totalprice = 0;
 		System.out.println("Enter the number of items: ");
-		int item= scan.nextInt();
-		System.out.println("Enter the price of first item: RM");
-		double k = scan.nextDouble();
-		System.out.println("Enter the quantity of first item: ");
-		int quantity1= scan.nextInt();
-		double total1 = k*quantity1;
+		int items= scan.nextInt();
+		
+		if (items > 3) {
+			System.out.println("Maximum number of items have reached.");
+			return;
+		}
+		
+		for (int i = 0; i < items; i++) {
+			System.out.println("Enter quantity of items: ");
+			int quantity = scan.nextInt();
+			System.out.println("Enter price of item: ");
+			double price = scan.nextDouble();
 				
-		System.out.println("Enter the price of second item: RM");
-		double m = scan.nextDouble();
-		System.out.println("Enter the quantity of second item: ");
-		int quantity2= scan.nextInt();
-		double total2 = m*quantity2;
-				
-		System.out.println("Enter the price of third item: RM");
-		double n = scan.nextDouble();
-		System.out.println("Enter the quantity of third item: ");
-		int quantity3= scan.nextInt();
-		double total3 = n*quantity3;
-				
-		double totalprice = total1 + total2 +total3;
-				
+		totalprice = price*quantity;
+		
+		}
+		
 		if (totalprice < 100.00) {
 			double discountreceived = (totalprice*10)/100;
 			double e = totalprice - discountreceived;
