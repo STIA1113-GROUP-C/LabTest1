@@ -1,0 +1,48 @@
+package quiz;
+import java.util.Scanner;
+public class LabTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		Scanner scan = new Scanner(System.in);
+				
+		System.out.println("Enter the number of items: ");
+		int item= scan.nextInt();
+		System.out.println("Enter the price of first item: RM");
+		double a = scan.nextDouble();
+		System.out.println("Enter the quantity of first item: ");
+		int quantity1= scan.nextInt();
+		double total1 = a*quantity1;
+				
+		System.out.println("Enter the price of second item: RM");
+		double b = scan.nextDouble();
+		System.out.println("Enter the quantity of second item: ");
+		int quantity2= scan.nextInt();
+		double total2 = b*quantity2;
+				
+		System.out.println("Enter the price of third item: RM");
+		double c = scan.nextDouble();
+		System.out.println("Enter the quantity of third item: ");
+		int quantity3= scan.nextInt();
+		double total3 = c*quantity3;
+				
+		double totalprice = total1 + total2 +total3;
+				
+		if (totalprice < 100.00) {
+			double discountreceived = (totalprice*10)/100;
+			double x = totalprice - discountreceived;
+			System.out.printf("Total price : RM%.2f%n" , totalprice);
+			System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+			System.out.printf("Price to be paid : RM%.2f%n" , x);
+			}
+				
+		if (totalprice > 100.00) {
+			double discountreceived = (totalprice*20)/100;
+			double x = totalprice - discountreceived;
+			System.out.printf("Total price : RM%.2f%n" , totalprice);
+			System.out.printf("Discount received : RM%.2f%n" , discountreceived);
+			System.out.printf("Price to be paid : RM%.2f%n" , x);
+			}	
+	}
+
+}
