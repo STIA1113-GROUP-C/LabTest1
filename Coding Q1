@@ -6,6 +6,7 @@ public class Ques1 {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		double totalprice = 0;
+		double sum;
 		System.out.println("Enter the number of items: ");
 		int items= scan.nextInt();
 		
@@ -14,14 +15,13 @@ public class Ques1 {
 			return;
 		}
 		
-		for (int i = 0; i < items; i++) {
-			System.out.println("Enter quantity of items: ");
+		for (int i = 1; i <= items; i++) {
+			System.out.println("Enter quantity of item " +i+" :");
 			int quantity = scan.nextInt();
 			System.out.println("Enter price of item: ");
-			double price = scan.nextDouble();
-				
-		totalprice = price*quantity;
-		
+			double price = scan.nextDouble();		
+		 sum = price*quantity;
+		 totalprice += sum;
 		}
 		
 		if (totalprice < 100.00) {
@@ -42,3 +42,4 @@ public class Ques1 {
 	}
 
 }
+
