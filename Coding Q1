@@ -1,6 +1,6 @@
-package quiz;
+package labTest1;
 import java.util.Scanner;
-public class LabTest1 {
+public class Ques1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
@@ -9,39 +9,39 @@ public class LabTest1 {
 		System.out.println("Enter the number of items: ");
 		int item= scan.nextInt();
 		System.out.println("Enter the price of first item: RM");
-		double a = scan.nextDouble();
+		double k = scan.nextDouble();
 		System.out.println("Enter the quantity of first item: ");
 		int quantity1= scan.nextInt();
-		double total1 = a*quantity1;
+		double total1 = k*quantity1;
 				
 		System.out.println("Enter the price of second item: RM");
-		double b = scan.nextDouble();
+		double m = scan.nextDouble();
 		System.out.println("Enter the quantity of second item: ");
 		int quantity2= scan.nextInt();
-		double total2 = b*quantity2;
+		double total2 = m*quantity2;
 				
 		System.out.println("Enter the price of third item: RM");
-		double c = scan.nextDouble();
+		double n = scan.nextDouble();
 		System.out.println("Enter the quantity of third item: ");
 		int quantity3= scan.nextInt();
-		double total3 = c*quantity3;
+		double total3 = n*quantity3;
 				
 		double totalprice = total1 + total2 +total3;
 				
 		if (totalprice < 100.00) {
 			double discountreceived = (totalprice*10)/100;
-			double x = totalprice - discountreceived;
+			double e = totalprice - discountreceived;
 			System.out.printf("Total price : RM%.2f%n" , totalprice);
 			System.out.printf("Discount received : RM%.2f%n" , discountreceived);
-			System.out.printf("Price to be paid : RM%.2f%n" , x);
+			System.out.printf("Price to be paid : RM%.2f%n" , e);
 			}
 				
 		if (totalprice > 100.00) {
 			double discountreceived = (totalprice*20)/100;
-			double x = totalprice - discountreceived;
+			double e = totalprice - discountreceived;
 			System.out.printf("Total price : RM%.2f%n" , totalprice);
 			System.out.printf("Discount received : RM%.2f%n" , discountreceived);
-			System.out.printf("Price to be paid : RM%.2f%n" , x);
+			System.out.printf("Price to be paid : RM%.2f%n" , e);
 			}	
 	}
 
