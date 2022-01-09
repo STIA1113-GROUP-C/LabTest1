@@ -16,9 +16,9 @@ public class Ques1 {
 		}
 		
 		for (int i = 1; i <= items; i++) {
-			System.out.println("Enter quantity of item " +i+" :");
+			System.out.println("Enter quantity of item " +i+":");
 			int quantity = scan.nextInt();
-			System.out.println("Enter price of item: ");
+			System.out.println("Enter price of item: RM");
 			double price = scan.nextDouble();		
 		 sum = price*quantity;
 		 totalprice += sum;
