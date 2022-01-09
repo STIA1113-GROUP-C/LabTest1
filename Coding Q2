@@ -16,21 +16,21 @@ public class Ques2 {
 			double commission = 0.05*sales;
 			double wages = hours*5.00;
 			double dailyWages = commission + wages;
-			System.out.printf("Commission: RM%.2f%n" , commission);
+			System.out.printf("Commission : RM%.2f%n" , commission);
 			System.out.printf("Daily wages: RM%.2f%n" , dailyWages);
 		}
 		else if((sales >= 301) && (sales <= 500)) {
 			double commission = 0.1*sales;
 			double wages = hours*5.00;
 			double dailyWages = commission + wages;
-			System.out.printf("Commission: RM%.2f%n" , commission);
+			System.out.printf("Commission : RM%.2f%n" , commission);
 			System.out.printf("Daily wages: RM%.2f%n" , dailyWages);
 		}
 		else if(sales >= 501) {
 			double commission = 0.15*sales;
 			double wages = hours*5.00;
 			double dailyWages = commission + wages;
-			System.out.printf("Commission: RM%.2f%n" , commission);
+			System.out.printf("Commission : RM%.2f%n" , commission);
 			System.out.printf("Daily wages: RM%.2f%n" , dailyWages);
 		}
 	}
